@@ -1,0 +1,153 @@
+{
+  "Items": [
+    {
+      "products": [
+        {
+          "name": "Luxury Men's Watch",
+          "category": "Watches",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Classic Men's Watch",
+          "category": "Watches",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Sporty Men's Watch",
+          "category": "Watches",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Elegant Women's Watch",
+          "category": "Watches",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Rose Gold Women's Watch",
+          "category": "Watches",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Stylish Women's Watch",
+          "category": "Watches",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Kids' Digital Watch",
+          "category": "Watches",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Cartoon Kids' Watch",
+          "category": "Watches",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Sports Kids' Watch",
+          "category": "Watches",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Men's Casual Shirt",
+          "category": "Clothes",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Men's Formal Shirt",
+          "category": "Clothes",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Men's T-Shirt",
+          "category": "Clothes",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Men's Jacket",
+          "category": "Clothes",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Women's Summer Dress",
+          "category": "Clothes",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Women's Casual Shirt",
+          "category": "Clothes",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Women's Jeans",
+          "category": "Clothes",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Women's Winter Coat",
+          "category": "Clothes",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Kids' Hoodie",
+          "category": "Clothes",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Kids' T-Shirt",
+          "category": "Clothes",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Kids' Jeans",
+          "category": "Clothes",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Men's Gold Ring",
+          "category": "Jewelry",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Men's Silver Chain",
+          "category": "Jewelry",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Men's Leather Bracelet",
+          "category": "Jewelry",
+          "subCategory": "Men"
+        },
+        {
+          "name": "Women's Diamond Necklace",
+          "category": "Jewelry",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Women's Gold Earrings",
+          "category": "Jewelry",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Women's Silver Bracelet",
+          "category": "Jewelry",
+          "subCategory": "Women"
+        },
+        {
+          "name": "Kids' Charm Bracelet",
+          "category": "Jewelry",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Kids' Cartoon Ring",
+          "category": "Jewelry",
+          "subCategory": "Kids"
+        },
+        {
+          "name": "Kids' Pendant Necklace",
+          "category": "Jewelry",
+          "subCategory": "Kids"
+        }
+      ]
+    }
+  ]
+}
