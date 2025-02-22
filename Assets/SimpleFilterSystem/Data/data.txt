@@ -1,151 +1,379 @@
 {
   "Items": [
     {
-      "products": [
+      "categories": [
         {
-          "name": "Luxury Men's Watch",
-          "category": "Watches",
-          "subCategory": "Men"
+          "name": "Watches",
+          "filters": {
+            "subcategory": [
+              "Men",
+              "Women",
+              "Kids"
+            ],
+            "brand": [
+              "Rolex",
+              "Casio",
+              "Seiko",
+              "Tag Heuer",
+              "Omega",
+              "Tissot",
+              "Fossil",
+              "Michael Kors",
+              "Cartier",
+              "Citizen",
+              "Garmin",
+              "Disney",
+              "Timex",
+              "Apple",
+              "Gucci"
+            ],
+            "priceRange": [
+              "Under $50",
+              "$50 - $500",
+              "$500 - $1000",
+              "$1000 - $5000",
+              "Above $5000"
+            ],
+            "type": [
+              "Analog",
+              "Digital",
+              "Smartwatch",
+              "Hybrid",
+              "Luxury",
+              "Jewelry Watch",
+              "Cartoon",
+              "Educational"
+            ],
+            "size": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "material": [
+              "Stainless Steel",
+              "Gold",
+              "Titanium",
+              "Leather",
+              "Rubber",
+              "Ceramic"
+            ]
+          },
+          "items": [
+            {
+              "name": "Rolex Submariner",
+              "subcategory": "Men",
+              "brand": "Rolex",
+              "price": 8000,
+              "type": "Luxury",
+              "size": "Large",
+              "material": "Gold"
+            },
+            {
+              "name": "Tag Heuer Carrera",
+              "subcategory": "Men",
+              "brand": "Tag Heuer",
+              "price": 3500,
+              "type": "Analog",
+              "size": "Medium",
+              "material": "Stainless Steel"
+            },
+            {
+              "name": "Seiko 5 Sports",
+              "subcategory": "Men",
+              "brand": "Seiko",
+              "price": 400,
+              "type": "Analog",
+              "size": "Medium",
+              "material": "Titanium"
+            },
+            {
+              "name": "Cartier Tank",
+              "subcategory": "Women",
+              "brand": "Cartier",
+              "price": 7000,
+              "type": "Luxury",
+              "size": "Small",
+              "material": "Gold"
+            },
+            {
+              "name": "Michael Kors Parker",
+              "subcategory": "Women",
+              "brand": "Michael Kors",
+              "price": 350,
+              "type": "Analog",
+              "size": "Medium",
+              "material": "Stainless Steel"
+            },
+            {
+              "name": "Apple Watch Series 9",
+              "subcategory": "Women",
+              "brand": "Apple",
+              "price": 500,
+              "type": "Smartwatch",
+              "size": "Medium",
+              "material": "Titanium"
+            },
+            {
+              "name": "Disney Frozen Watch",
+              "subcategory": "Kids",
+              "brand": "Disney",
+              "price": 40,
+              "type": "Cartoon",
+              "size": "Small",
+              "material": "Rubber"
+            },
+            {
+              "name": "Garmin Kids' Smartwatch",
+              "subcategory": "Kids",
+              "brand": "Garmin",
+              "price": 120,
+              "type": "Smartwatch",
+              "size": "Medium",
+              "material": "Plastic"
+            },
+            {
+              "name": "Timex Time Teacher",
+              "subcategory": "Kids",
+              "brand": "Timex",
+              "price": 30,
+              "type": "Educational",
+              "size": "Small",
+              "material": "Leather"
+            }
+          ]
         },
         {
-          "name": "Classic Men's Watch",
-          "category": "Watches",
-          "subCategory": "Men"
+          "name": "Clothes",
+          "filters": {
+            "subcategory": [
+              "Men",
+              "Women",
+              "Kids"
+            ],
+            "brand": [
+              "Nike",
+              "Adidas",
+              "Levi's",
+              "Puma",
+              "Gucci",
+              "Zara",
+              "H&M",
+              "Under Armour",
+              "Tommy Hilfiger"
+            ],
+            "priceRange": [
+              "Under $50",
+              "$50 - $150",
+              "Above $150"
+            ],
+            "type": [
+              "Casual",
+              "Formal",
+              "Sportswear",
+              "Winterwear"
+            ],
+            "size": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "XXL"
+            ],
+            "material": [
+              "Cotton",
+              "Denim",
+              "Leather",
+              "Polyester",
+              "Wool",
+              "Silk"
+            ]
+          },
+          "items": [
+            {
+              "name": "Nike Sports T-Shirt",
+              "subcategory": "Men",
+              "brand": "Nike",
+              "price": 50,
+              "type": "Sportswear",
+              "size": "M",
+              "material": "Polyester"
+            },
+            {
+              "name": "Levi's Denim Jacket",
+              "subcategory": "Men",
+              "brand": "Levi's",
+              "price": 120,
+              "type": "Casual",
+              "size": "L",
+              "material": "Denim"
+            },
+            {
+              "name": "Gucci Wool Coat",
+              "subcategory": "Men",
+              "brand": "Gucci",
+              "price": 900,
+              "type": "Winterwear",
+              "size": "XL",
+              "material": "Wool"
+            },
+            {
+              "name": "Puma Hoodie",
+              "subcategory": "Women",
+              "brand": "Puma",
+              "price": 70,
+              "type": "Casual",
+              "size": "M",
+              "material": "Cotton"
+            },
+            {
+              "name": "Zara Slim Fit Suit",
+              "subcategory": "Women",
+              "brand": "Zara",
+              "price": 250,
+              "type": "Formal",
+              "size": "L",
+              "material": "Polyester"
+            },
+            {
+              "name": "H&M Cotton Shirt",
+              "subcategory": "Women",
+              "brand": "H&M",
+              "price": 40,
+              "type": "Casual",
+              "size": "S",
+              "material": "Cotton"
+            },
+            {
+              "name": "Adidas Kids' Tracksuit",
+              "subcategory": "Kids",
+              "brand": "Adidas",
+              "price": 80,
+              "type": "Sportswear",
+              "size": "S",
+              "material": "Polyester"
+            },
+            {
+              "name": "Under Armour Joggers",
+              "subcategory": "Kids",
+              "brand": "Under Armour",
+              "price": 60,
+              "type": "Sportswear",
+              "size": "M",
+              "material": "Cotton"
+            },
+            {
+              "name": "Tommy Hilfiger Polo Shirt",
+              "subcategory": "Kids",
+              "brand": "Tommy Hilfiger",
+              "price": 80,
+              "type": "Casual",
+              "size": "L",
+              "material": "Cotton"
+            }
+          ]
         },
         {
-          "name": "Sporty Men's Watch",
-          "category": "Watches",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Elegant Women's Watch",
-          "category": "Watches",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Rose Gold Women's Watch",
-          "category": "Watches",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Stylish Women's Watch",
-          "category": "Watches",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Kids' Digital Watch",
-          "category": "Watches",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Cartoon Kids' Watch",
-          "category": "Watches",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Sports Kids' Watch",
-          "category": "Watches",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Men's Casual Shirt",
-          "category": "Clothes",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Men's Formal Shirt",
-          "category": "Clothes",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Men's T-Shirt",
-          "category": "Clothes",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Men's Jacket",
-          "category": "Clothes",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Women's Summer Dress",
-          "category": "Clothes",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Women's Casual Shirt",
-          "category": "Clothes",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Women's Jeans",
-          "category": "Clothes",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Women's Winter Coat",
-          "category": "Clothes",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Kids' Hoodie",
-          "category": "Clothes",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Kids' T-Shirt",
-          "category": "Clothes",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Kids' Jeans",
-          "category": "Clothes",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Men's Gold Ring",
-          "category": "Jewelry",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Men's Silver Chain",
-          "category": "Jewelry",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Men's Leather Bracelet",
-          "category": "Jewelry",
-          "subCategory": "Men"
-        },
-        {
-          "name": "Women's Diamond Necklace",
-          "category": "Jewelry",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Women's Gold Earrings",
-          "category": "Jewelry",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Women's Silver Bracelet",
-          "category": "Jewelry",
-          "subCategory": "Women"
-        },
-        {
-          "name": "Kids' Charm Bracelet",
-          "category": "Jewelry",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Kids' Cartoon Ring",
-          "category": "Jewelry",
-          "subCategory": "Kids"
-        },
-        {
-          "name": "Kids' Pendant Necklace",
-          "category": "Jewelry",
-          "subCategory": "Kids"
+          "name": "Jewelry",
+          "filters": {
+            "subcategory": [
+              "Men",
+              "Women"
+            ],
+            "brand": [
+              "Tiffany & Co.",
+              "Cartier",
+              "Gucci",
+              "Bvlgari",
+              "Pandora",
+              "Swarovski",
+              "David Yurman",
+              "Chanel"
+            ],
+            "priceRange": [
+              "Under $500",
+              "$500 - $2000",
+              "Above $2000"
+            ],
+            "type": [
+              "Ring",
+              "Bracelet",
+              "Chain",
+              "Luxury",
+              "Earrings",
+              "Necklace"
+            ],
+            "size": [
+              "Adjustable",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "material": [
+              "Gold",
+              "Silver",
+              "Platinum",
+              "Stainless Steel",
+              "Leather",
+              "Pearl"
+            ]
+          },
+          "items": [
+            {
+              "name": "Gold Signet Ring",
+              "subcategory": "Men",
+              "brand": "Tiffany & Co.",
+              "price": 2000,
+              "type": "Ring",
+              "size": "Medium",
+              "material": "Gold"
+            },
+            {
+              "name": "Silver Chain Necklace",
+              "subcategory": "Men",
+              "brand": "Gucci",
+              "price": 350,
+              "type": "Chain",
+              "size": "Large",
+              "material": "Silver"
+            },
+            {
+              "name": "David Yurman Cable Bracelet",
+              "subcategory": "Men",
+              "brand": "David Yurman",
+              "price": 600,
+              "type": "Bracelet",
+              "size": "Medium",
+              "material": "Stainless Steel"
+            },
+            {
+              "name": "Cartier Love Bracelet",
+              "subcategory": "Women",
+              "brand": "Cartier",
+              "price": 7000,
+              "type": "Bracelet",
+              "size": "Adjustable",
+              "material": "Gold"
+            },
+            {
+              "name": "Bvlgari Serpenti Ring",
+              "subcategory": "Women",
+              "brand": "Bvlgari",
+              "price": 3000,
+              "type": "Ring",
+              "size": "Small",
+              "material": "Platinum"
+            },
+            {
+              "name": "Swarovski Crystal Earrings",
+              "subcategory": "Women",
+              "brand": "Swarovski",
+              "price": 250,
+              "type": "Earrings",
+              "size": "Small",
+              "material": "Silver"
+            }
+          ]
         }
       ]
     }

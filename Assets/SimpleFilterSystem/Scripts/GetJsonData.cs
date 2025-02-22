@@ -5,7 +5,7 @@ using UnityEngine;
 public class GetJsonData : MonoBehaviour
 {
     public TextAsset asset;
-    public EcommerceData.AllData[] ecomData;
+    public EcommerceData.Item[] ecommerceData;
 
     void Awake()
     {
@@ -16,6 +16,6 @@ public class GetJsonData : MonoBehaviour
     [SerializeField]
     public void GetDataFromJson()
     {
-        ecomData = JsonHelper.FromJsonString<EcommerceData.AllData>(asset.text);
+        ecommerceData = JsonHelper.FromJsonString<EcommerceData.Item>(asset.text);
     }
 }

@@ -5,58 +5,132 @@ using UnityEngine.UI;
 
 public class FilterCategories : MonoBehaviour
 {
-    public GetJsonData getJsonData;
+    GetJsonData getJsonData;
     public Transform productListContainer;
     public Button applyFilterButton;
     public Button resetFilterButton;
-    public Text menSubCategoryText;
-    public Text woomenSubCategoryText;
-    public Text kidsSubCategoryText;
-    public Toggle menSubCategoryToggle;
-    public Toggle womenSubCategoryToggle;
-    public Toggle kidsSubCategoryToggle;
+    public List<string> filterBrand = new List<string>();
+    public List<string> filterSubcategory = new List<string>();
+    public List<string> filterType = new List<string>();
+    public List<string> filterSize = new List<string>();
+    public List<string> filterMaterial = new List<string>();
+    public List<EcommerceData.Item2> filteredProducts = new List<EcommerceData.Item2>();
+    public enum FilterType
+    {
+        subcategory = 0,
+        brand = 1,
+        type = 2,
+        size = 3,
+        material = 4
+    }
+    public FilterType filterTypes;
 
-    public List<EcommerceData.Product> filteredProducts = new List<EcommerceData.Product>();
 
     void Start()
     {
+        getJsonData = UIManager.Instance.getJsonData;
         applyFilterButton.onClick.AddListener(ApplyFilter);
         resetFilterButton.onClick.AddListener(ResetFilter);
-        filteredProducts = getJsonData.ecomData[0].products;
-        UIManager.Instance.gridView.GenerateCells(filteredProducts.Count);
+
+        for (int i = 0; i < UIManager.Instance.toggles.Count; i++)
+        {
+            var j = i;
+            UIManager.Instance.toggles[j].onValueChanged.AddListener(delegate
+            {
+                Filterbrand(UIManager.Instance.toggles[j], UIManager.Instance.toggleTexts[j]);
+            });
+        }
+        filteredProducts = getJsonData.ecommerceData[0].categories[UIManager.Instance.currentCategory].items;
+    }
+
+    public void Filterbrand(Toggle toggle, Text text)
+    {
+        if (toggle.isOn)
+        {
+            var filter = filterTypes;
+            switch (filter)
+            {
+                case FilterType.subcategory:
+                    filterSubcategory.Add(text.text);
+                    break;
+                case FilterType.brand:
+                    filterBrand.Add(text.text);
+                    break;
+                case FilterType.type:
+                    filterType.Add(text.text);
+                    break;
+                case FilterType.size:
+                    filterSize.Add(text.text);
+                    break;
+                case FilterType.material:
+                    filterMaterial.Add(text.text);
+                    break;
+                default:
+                    break;
+            }
+        }
+        else
+        {
+            var filter = filterTypes;
+            switch (filter)
+            {
+                case FilterType.subcategory:
+                    filterSubcategory.Remove(text.text);
+                    break;
+                case FilterType.brand:
+                    filterBrand.Remove(text.text);
+                    break;
+                case FilterType.type:
+                    filterType.Remove(text.text);
+                    break;
+                case FilterType.size:
+                    filterSize.Remove(text.text);
+                    break;
+                case FilterType.material:
+                    filterMaterial.Remove(text.text);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     void ApplyFilter()
     {
-        string selectedCategory = UIManager.Instance.selectedcategory;
-        string selectedSubCategory_men = "";
-        string selectedSubCategory_women = "";
-        string selectedSubCategory_kids = "";
-        if (menSubCategoryToggle.isOn)
-            selectedSubCategory_men = menSubCategoryText.text;
-        if (womenSubCategoryToggle.isOn)
-            selectedSubCategory_women = woomenSubCategoryText.text;
-        if (kidsSubCategoryToggle.isOn)
-            selectedSubCategory_kids = kidsSubCategoryText.text;
-
-        filteredProducts = getJsonData.ecomData[0].products
-            .Where(p => p.category == selectedCategory && (p.subCategory == selectedSubCategory_men || p.subCategory == selectedSubCategory_women || p.subCategory == selectedSubCategory_kids))
-            .ToList();
+        filteredProducts = getJsonData.ecommerceData[0].categories[UIManager.Instance.currentCategory].items
+               .Where(item =>
+               (filterBrand != null && filterBrand.Contains(item.brand)) ||
+               (filterSubcategory != null && filterSubcategory.Contains(item.subcategory)) ||
+               (filterType != null && filterType.Contains(item.type)) ||
+               (filterMaterial != null && filterMaterial.Contains(item.material)) ||
+               (filterSize != null && filterSize.Contains(item.size))
+               ).ToList();
 
         DisplayProducts();
     }
 
     void ResetFilter()
     {
-        filteredProducts = getJsonData.ecomData[0].products;
-        menSubCategoryToggle.isOn = false;
-        womenSubCategoryToggle.isOn = false;
-        kidsSubCategoryToggle.isOn = false;
+        SetTogglesActive(false);
+        filteredProducts = getJsonData.ecommerceData[0].categories[UIManager.Instance.currentCategory].items;
         DisplayProducts();
     }
 
-    void DisplayProducts()
+    public void DisplayProducts()
     {
         UIManager.Instance.gridView.GenerateCells(filteredProducts.Count);
+    }
+
+    public void SetFilterType(int val)
+    {
+        filterTypes = (FilterType)val;
+    }
+
+    public void SetTogglesActive(bool val)
+    {
+        for (int i = 0; i < UIManager.Instance.toggles.Count; i++)
+        {
+            UIManager.Instance.toggles[i].isOn = val;
+        }
     }
 }
